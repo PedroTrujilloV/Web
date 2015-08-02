@@ -1,0 +1,471 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Escape Velocity 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Leslie + Pedro</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900" rel="stylesheet" />
+	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-panels.min.js"></script>
+    <!-- slider -->
+    <noscript>
+        <link rel="stylesheet" href="css/skel-noscript.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-desktop.css" />
+    </noscript>
+    <script>
+
+        /////anclaje suave
+        jQuery(document).ready(function () {
+            //// $('h2').append('<a href="#top" class="gototop">Subir</a>');
+            linkInterno = $('a[href^="#"]');
+            linkInterno.on('click', function (e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+                $('html, body').animate({ scrollTop: $(href).offset().top }, 'slow');
+            });
+        });
+
+        /////desplegar textos largos
+        $(function () {
+            $("#mostrar").click(function (event) {
+                event.preventDefault();
+                $("#caja").slideToggle();
+            });
+            $("#caja a").click(function (event) {
+                event.preventDefault();
+                $("#caja").slideUp();
+            });
+        });
+
+        /////desplegar textos largos tipo2
+        $(document).ready(function () {
+            $("dd").hide();
+            $("dt").click(function (event) {
+                var desplegable = $(this).next();
+                $('dd').not(desplegable).slideUp('fast');
+                desplegable.slideToggle('fast');
+                event.preventDefault();
+            })
+        });
+
+    </script>
+</head>
+<body class="homepage" >
+    <!-- Header Wrapper -->
+    <div id="header-wrapper" class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+                    <!-- Header -->
+                    <div id="header">
+                        <!-- Logo -->
+                        <div id="logo" class="logo-cursiva">
+                            <h1>Leslie + Pedro&nbsp</h1>
+                            <span class="byline">17 January 2015</span>
+                            <span class="byline">Cartagena, Colombia</span>
+                        </div>
+                        <!-- /Logo -->
+                        <!-- Nav -->
+                        <nav id="nav">
+											<ul>
+												<li class="current_page_item">
+													<a href="index.html"><span>Welcome</span></a>
+													<ul>
+														<li><a href="about_us.html#wrapper-about">About Us</a></li>
+														<li>
+															<a href="photos.html">Photos</a>
+															<ul>
+																<li><a href="photos.html#TheCouple">The Couple</a></li>
+																<li><a href="photos.html#Cartagena">Cartagena</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="#wrapper-wedding-events"><span>Events</span></a>
+													<ul>
+														<li><a href="#welcome_dinner">Welcome Dinner</a></li>
+														<li><a href="#wedding">Wedding</a></li>
+														<li><a href="#rosario_islands">Rosario Islands</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#wrapper-travel"><span>Travel</span></a>
+													<ul>
+														<li><a href="#getting_here">Getting Here</a></li>
+														<li><a href="#hotels">Hotels</a></li>
+														<li><a href="#about_cartagena">About Cartagena</a></li>
+														<li><a href="#colombia">Colombia</a></li>
+													</ul>
+												</li>
+												<li><a href="https://docs.google.com/forms/d/1YOG8--nMq6AESpqdYVL40XGd89Jz6WLH5_oKsR_Jp9g/viewform">RSVP</a></li>
+											</ul>
+										</nav>
+                        <!-- /Nav -->
+                    </div>
+                    <!-- /Header -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Header Wrapper -->
+    <!-- Intro Wrapper -->
+    <div id="intro-wrapper" class="wrapper wrapper-style1">
+        <div class="title" id="Welcome">
+            Welcome</div>
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+                    <!-- Intro -->
+                    <section id="intro">
+									<p class="style2"><strong>Welcome friends and family!</strong><br class="mobile-hide"/></p>
+									<p class="style1">We are very excited to be hosting our wedding celebration in the beautiful city of Cartagena, and we hope that you will be able to join us! On this website, you can find information about the schedule, travel resources, RSVP, and a little bit about us. We will add more information and updates as the wedding gets closer.</p>
+									<p class="style1">See you in Cartagena in</p>
+									<script language="JavaScript" src="js/countdown.js"></script>
+									<script language="JavaScript">
+										TargetDate = "01/17/2015 1:00 AM";
+										CountActive = true;
+										CountStepper = -1;
+										LeadingZero = true;
+										DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds!";
+										FinishMessage = "Happily Married!";
+									</script>
+									<br/> 
+									<br/> 
+									<p class="style1">Love,</p>
+									<p class="style1"><strong>Leslie and Pedro</strong></p>
+									
+									
+									
+									<!--
+									<p class="style3">Mauris tellus lacus, tincidunt eget mattis at, laoreet vel velit. 
+									Aliquam diam ante, aliquet sit amet vulputate lorem at placerat at nisl. 
+									Maecenas et gravida ligula sed lacus euismod tincidunt nullam eget justo orci.</p>
+									<ul class="actions">
+										<li><a href="#events" class="button button-style3 button-big">Proceed</a></li>
+									</ul>-->
+									
+								</section>
+                    <!-- /Intro -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Intro Wrapper -->
+    <!-- Main Wrapper -->
+    <div class="wrapper wrapper-style2" id="wrapper-wedding-events">
+        <a href="#wrapper-wedding-events" ><div class="title" id="events">
+            Events</div></a>
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+                    <!-- Main -->
+                    <div id="main-wedding-events">
+                        <!-- Image -->
+                        <a href="" class="image image-featured" id ="im-wedding-events">
+                            <img src="images/panorama2_resize.jpg" style = "background-size: cover;" alt="" />
+                        </a>
+                        <!-- /Image -->
+                        <!-- Features -->
+                        <section id="features">
+											<header id ="wedding-events" class="style1">
+												<h2>Wedding Events</h2>
+												<p class="byline">Cartagena is a beautiful place, so we're planning activities before and after the wedding so that we can enjoy the sights with our guests.</p>
+											</header>
+											<div class="feature-list2">
+												<div>
+													<div class="row">
+														
+															<section>
+																<br/>
+																<br/>
+																<h3 class="fa fa-soup" id="welcome_dinner">Welcome dinner!</h3>
+																<p>We hope you will be able to join us for a welcome dinner on Friday, January 16th! As the wedding date approaches, we will update this section with more details.
+																<br/> 
+																<br/> 
+															</section>
+													</div>
+													<div class="row" >
+													
+													
+															<section>
+																<br/>
+																<br/>
+																<h3 class="fa fa-heart" id="wedding">Wedding!!!</h3>
+																<p >Both the wedding and the reception will be held at <a href = "http://www.hotelboutiquecasapestagua.com/en/">Casa Pestagua</a>, a beautiful Spanish colonial house in the heart of the historic center of Cartagena, the Ciudad Amurallada (walled city). <br/>
+																<br/>As the wedding date approaches, we will add more specific details regarding time, attire, etc. and you can always visit our <a href = "http://www.weddingmapper.com/cartagena/bolivar/visit/070eja">wedding map</a> to get an idea of where things are.
+																<br/>
+																<br/>										
+																<iframe class="image image-full" src="http://www.weddingmapper.com/iframe/content/636935?whatandwhere=0&zoom=18" style="height:300px; margin-left: auto; margin-right: auto; scrolling = no;" name="wm_636935" scrolling="no">
+																</iframe></p>
+																
+															</section>
+														
+														
+													</div>
+													<div class="row">
+														
+															<section>
+																<br/>
+																<br/>
+																<h3 class="fa fa-anchor" id="rosario_islands">Rosario Islands!</h3>
+																<p><p >Less than an hour by boat from Cartagena are the <a href = "http://www.rosarioislands.com/">Rosario Islands</a>, an archipelago surrounded by clear blue water and coral reefs.  Join us for a day tour to the islands on Monday, January 19th (MLK day in the US, maybe you already have the day off of work!). We will add more specific information as we get closer to January.</p>
+																<br/> 
+															</section>
+													</div>
+
+												</div>
+											</div>
+											
+										</section>
+                        <!-- /Features -->
+                    </div>
+                    <!-- /Main -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Main Wrapper -->
+    <!-- Highlights Wrapper -->
+    <div class="wrapper wrapper-style3" id="wrapper-travel">
+        <a href="#wrapper-travel" ><div class="title" id="Travel">
+            Travel</div></a>
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+                    <!-- Main -->
+                    <div id="main-travel">
+                        <!-- Image -->
+                        <a href="" class="image image-featured">
+                            <img src="images/beach_resize.jpg" style = "background-size: cover;" alt="" />
+                        </a>
+                        <!-- /Image -->
+                        <!-- Features -->
+                        <section id="features">
+											<header class="style1">
+												<h2>Travel Plans</h2>
+												<p class="byline">We're happy to help you plan your trip! Below is some information about traveling to and around Cartagena & Colombia, and what to expect when you arrive.</p>
+											</header>
+											<div class="feature-list">
+											
+												<div>
+												
+													<div class="row">
+														<div class="6u">
+															<section>
+															
+																<h3 class="fa fa-plane" id="getting_here">Getting here</h3>
+																
+																<dl>
+																	<dt>
+																		<p align="justify">
+																			<a href="#" class="image image-full"><img src="images/cathedral_small.jpg" alt="" /></a>
+																			<p align="center"><a href="#" class="button button-style1"  id="mostrar">click to show/hide ▼▲</a></p><br/><br/>
+																		</p>
+																	</dt>					
+																	<dd>
+																		<p align="justify">
+																			<a href = "http://www.jetblue.com/">JetBlue</a> has a direct flight (less than 4 hours) from Orlando (MCO) to Bogota, Colombia (BOG). From Bogota, <a href = "https://www.copaair.com/sites/us/en/pages/homepage.aspx">COPA</a>, <a href = "http://www.lan.com/en_us/sitio_personas/index.html">LAN</a>, <a href = "http://www.avianca.com/en-us/">Avianca</a>, and <a href = "http://www.vivacolombia.co/default.aspx?lng=2e8356f8-1dae-4cb3-9387-8b89101a0cb5">VivaColombia</a> fly (90 minutes) to Cartagena. <br/><br/>																		
+																			You can also fly on <a href = "http://www.avianca.com/en-us/">Avianca</a> from Orlando to Cartagena with one connection in Bogota. <a href = "http://www.avianca.com/en-us/">Avianca</a> also flies directly from Miami (MIA) to Cartagena (CTG). <br/><br/>
+																			The budget airline <a href = "http://www.spirit.com/Default.aspx">Spirit</a> flies from Orlando to Cartagena, connecting in Fort Lauderdale (FLL). <br/><br/>
+																			If you have frequent flier miles on United, you may be able to find space on <a href = "http://www.avianca.com/en-us/">Avianca</a> or <a href = "https://www.copaair.com/sites/us/en/pages/homepage.aspx">COPA</a> since they are part of the <a href = "http://www.staralliance.com/en/about/member_airlines/">Star Alliance</a>.  If you have American Airlines miles, check flights with LAN Colombia since they are part of <a href = "http://www.oneworld.com/member-airlines/lan">oneworld</a>.<br/><br/>
+																			Rafael Núñez International Airport is only a 10 minute drive from the heart of Cartagena's old walled city, and a taxi will cost less than 10 USD. Renting a car is not recommended, and would be much more trouble than it's worth with in this walkable city with limited parking and cheap taxis. <br/><br/>
+																			Remember that Monday, January 19th is Martin Luther King day in the US, so if you have that day off, it could make booking flights more convenient! <br/><br/>														
+																			<!--<a href="#" class="button button-style1"  id="mostrar">Learn More</a>-->
+																		</p>
+																	</dd>
+																</dl>
+																
+															</section>
+														</div>
+														<div class="6u">
+															<section>
+																<h3 class="fa fa-building" id="hotels">Hotels</h3>
+																<dl>
+																	<dt>
+																		<p align="justify">
+																	<a href="#" class="image image-full"><img src="images/windows_small.jpg" alt="" /></a>
+																	<p align="center"><a href="#" class="button button-style1"  id="mostrar">click to show/hide ▼▲</a></p><br/><br/>
+																</p>
+																		
+																	</dt>					
+																	<dd>
+																		<p align="justify">
+																			There is a huge variety when it comes to accommodation in Cartagena, from the luxurious <a href="http://www.sofitel-legend.com/cartagena/en/">Hotel Santa Clara</a> to the basic bed and breakfast <a href="http://www.hotelcasacarmencartagena.com/en-us/">Casa Carmen</a>, to hostel <a href="http://www.hostelcartagena.com/">El Viajero</a>, the 2013 winner of <a href="http://www.hostelworld.com/hoscars-2013#2">Best Hostel in Latin America</a>. The most beautiful and walkable region of the city is the Ciudad Amurallada (walled city), which is filled with cobblestone streets, gorgeous churches, restaurants, and other sights. Another option is the more modern Bocagrande neighborhood, a peninsula just south of the old walled city, which has the beach access that the walled city lacks. Bocagrande has more high rise hotels such as the <a href="http://hamptoninn3.hilton.com/en/hotels/colombia/hampton-by-hilton-cartagena-CTGHXHX/index.html">Hampton</a>, which has a rooftop pool! It's a short (less than 10 minutes) and cheap (less than 5 USD) taxi ride to the historic center from Bocagrande. <a href="http://www.tripadvisor.com/Tourism-g297476-Cartagena_Cartagena_District_Bolivar_Department-Vacations.html">TripAdvisor</a> is a good site to browse reviews and photos of hotels throughout Cartagena<br/><br/>																	
+																			Cartagena also has many options if you’re looking to rent a house or apartment for your stay, from small 1 bedroom places to large houses for a large group. <a href="https://www.airbnb.com/s/Cartagena--Colombia">Airbnb</a> has a great selection. Other sites to check are <a href="http://www.homeaway.com/search/keywords:Cartagena%2C+Colombia">HomeAway</a>, <a href="http://www.flipkey.com/cartagena-vacation-rentals/g297476/">FlipKey</a>, and <a href="http://coluxury.co/">COLuxury</a>.<br/>																			
+																			<!--<a href="#" class="button button-style1"  id="mostrar">Learn More</a>-->
+																		</p>
+																	</dd>
+																</dl>
+															</section>
+														</div>
+													</div>
+													<div class="row">
+														<div class="6u">
+															<section>
+																<h3 class="fa fa-map-marker" id="about_cartagena">About Cartagena</h3>
+																
+																<dl>
+																	<dt>
+																		<p align="justify">
+																			<a href="#" class="image image-full"><img src="images/castillo_small.jpg" alt="" /></a>
+																			<p align="center"><a href="#" class="button button-style1"  id="mostrar">click to show/hide ▼▲</a></p><br/><br/>
+																		</p>
+																	</dt>					
+																	<dd>
+																		<p align="justify">
+																			Cartagena, a UNESCO World Heritage Site, is the Venice of Colombia, with one of the most impressive old towns in the Western Hemisphere. With just the right mix of sun, sand, and colonial charm, a walk through Cartagena&#39;s inner walled city feels a bit like stepping onto the set of a 16th-century telenovela, complete with cobblestone streets and grandiose balconies overflowing with flowers.&nbsp; On the American continent there is no older city. &nbsp;<br />
+																			<br />
+																			Cartagena&#39;s tourism infrastructure is more developed than anywhere else in the country, so unlike some Colombian destinations, it&#39;s a pretty easy place to travel.&nbsp; People travel to Cartagena to splurge on its many fine hotels and restaurants, to explore its 500 years of history, and to sunbathe on its popular island beaches. You&#39;re sure to discover an enchanting place impossible to forget.&nbsp; As Colombia&#39;s top honeymoon destination, the city is full of romance, five-star hotels, and excellent dining options.<br />
+																			<br />
+																			<strong>History</strong><br/><br/>
+																			<a href="#" class="image image-full"><img src="images/oldmap_small.jpg" alt="" /></a>
+																		
+																			Founded by the Spanish in 1533, Cartagena is Colombia&rsquo;s and possibly Latin America&rsquo;s finest colonial city, and a UNESCO World Heritage Site. Shortly after it was founded it became the main Spanish port on the Caribbean coast, and was used to store gold and other treasure plundered from the Indians before it was transported back to Spain.<br />
+																			<br/>
+																			Due to the riches stored within its walls, Cartagena quickly became a target, and was on the receiving end of countless pirate attacks and five full scale sieges in the 16th century alone. The most famous siege (although not the largest) was led by Sir Francis Drake in 1586.<br />
+																			<br/>
+																			After a while, fed up with all the attacks, the Spanish decided enough was enough, and made Cartagena virtually impregnable by building huge 12 km-long walls around the centre, and a series of forts &amp; castles at strategic positions around the city.<br />
+																			<br/>
+																			Cartagena old town is a living museum of 16th and 17th century Spanish architecture, and it would easily be possible to spend a week or two here exploring the streets, admiring the beautiful colonial buildings, and soaking in the street life created by buskers, acrobats, dancers and artisans selling their wares. Not to mention the pristine Caribbean beaches, islands &amp; national parks within a day&rsquo;s reach of Cartagena.<br />
+																			<br/>
+																			<strong>The Ciudad Murallada</strong><br/><br/>
+																			<a href="#" class="image image-full"><img src="images/amurallada_small.jpg" alt="" /></a>
+																			
+																			In 1987, Cartagena&#39;s Ciudad Murallada, or &quot;Walled City&quot;, was declared a World Heritage Site by UNESCO, and its almost perfectly preserved colonial-era mansions, churches, and ornate balconies are the reason why.&nbsp; Where else in the Western Hemisphere can you sit in 16th-century plazas, walk along the walls of a 300-year-old fortress - one of the most impressive architectural feats of military history - and stay at a colonial-era hotel?&nbsp; Check <a href="http://www.tripadvisor.com/Tourism-g297476-Cartagena_Cartagena_District_Bolivar_Department-Vacations.html">TripAdvisor</a>, but be sure not to miss the Plaza Santo Domingo, Plaza Bolivar, Plaza de la Aduana &amp; Torre del Reloj, as well as all the beautiful churches.<br />
+																			<br />
+																			- <a href="http://www.earthoria.com/podcast-cartagena-de-indias-colombia.html">Earthoria</a>, <a href="http://www.frommers.com/destinations/cartagena">Frommers</a>, and <a href="http:// http://www.lonelyplanet.com/colombia/caribbean-coast/cartagena">Lonely Planet</a><br/><br/>
+																			<strong>Interesting Links:<br/>
+																			</strong><br/>
+																				<a href="http://travel.nytimes.com/travel/guides/central-and-south-america/colombia/cartagena/overview.html">- The New York Times on Cartagena</a>
+																			<br/>
+																				<a href="http://www.colombia.travel/en/international-tourist/vacations-holidays-where-to-go/cartagena-travel-guide">- Official Travel Guide to Cartagena</a>
+																				<br/><br/><!--<a href="#" class="button button-style1"  id="mostrar">Learn More</a>-->
+																		</p>
+																	</dd>
+																</dl>
+
+															</section>
+														</div>
+														<div class="6u">
+															<section>
+																<h3 class="fa fa-coffee" id="colombia">Colombia</h3>
+																<dl>
+																	<dt>
+																		<p align="justify">
+																			<a href="#" class="image image-full"><img src="images/flags_small.jpg" alt="" /></a>
+																			<!--<a href="#" ><font size="2">click to show/ hide ▼▲</font></a><br/><br/>-->
+																			<p align="center"><a href="#" class="button button-style1"  id="mostrar">click to show/hide ▼▲</a></p><br/><br/>
+																		</p>
+																	</dt>					
+																	<dd>
+																		<p align="justify">
+																			Why not extend your trip to explore more of Colombia? It's an extremely diverse country, with beaches on both the Atlantic and Pacific coasts, the Andes mountains, jungles, plains, deserts, coffee plantations...and more! Even spending an extra day or so in Bogotá on your way to or from Cartagena is well worth the effort. <br/><br/>
+																			Citizens of the United States do not need a visa to visit Colombia, just a <A href="http://travel.state.gov/content/passports/english.html">passport</A>! Colombia uses the same power system and plugs as the US. No adapters needed. As long as you alert your bank beforehand, you can easily withdraw cash using your ATM card, and this way you'll get the best exchange rate as well. If you have <a href = "http://www.t-mobile.com/optional-services/roaming.html">T-Mobile</a>, you get free unlimited texting and 3G data in Colombia! If not, we recommend installing WhatsApp or Google Hangouts on your phone so that you can text us using WiFi. <br/><br/> 
+																			Pedro is from Colombia and Leslie has traveled to Colombia nearly 10 times, so feel free to contact either of us for travel recommendations or ideas! Some other great resources for travel throughout Colombia are: <br/><br/>
+																			 
+																			<a href="http://wikitravel.org/en/Colombia">- Wikitravel</A> <br/><a href="http://www.cnn.com/video/shows/anthony-bourdain-parts-unknown/episode3/index.html">- Anthony Bourdain in Colombia</a><br/><a href="http://seecolombia.travel/">- Colombia Travel Tours</A>&nbsp; <br/><a href="http://www.andesecotours.com/">- Andes Eco Tours</a><br/>
+																			<a href="http://www.cntraveler.com/food/2013/07/bogota-colombia-dining-restaurants-chefs">- Conde Nast on restaurants in Bogotá </a>
+																			<br/><a href="http://www.nytimes.com/2010/07/04/travel/04hours.html">- NYT's 36 Hours in Bogotá</a> [2010] <br/>
+																			
+																			<br/><br/><!--<a href="#" class="button button-style1"  id="mostrar">Learn More</a>-->
+																		
+																		</p>
+																	</dd>
+																</dl>
+																</section>
+														</div>
+													</div>
+													
+												</div>
+											</div>
+											
+										</section>
+                        <!-- /Features -->
+                    </div>
+                    <!-- /Main -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Highlights Wrapper -->
+    <!-- Footer Wrapper -->
+    <div id="footer-wrapper" class="wrapper foot-copy">
+        <a href="#rsvp" ><div class="title" id="rsvp">
+            RSVP</div></a>
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+                    <!-- Footer -->
+                    <div id="footer">
+                        <header class="style1">
+										<h2>We hope you'll join us!</h2>
+										<!-- <p class="byline">
+											To RSVP online to our wedding, enter your name and e-mail in the following box. Just enter the name in your party as it appeared on your invitation, without prefixes. If you received the confirmation email, the process was successful, thanks! :)<br/>
+										</p> -->
+										<p class="byline">
+											After you receive your formal invitation by mail, please revisit this section of the website to RSVP online. Thanks!<br/>
+										</p>
+									</header>
+                        <hr />
+                        <!-- Contact Form -->
+<!--                         <div class="6u" style="margin-left: auto; margin-right: auto;">
+                            <section class="footer-one">
+														<form method="post" action="#">
+															<div>
+																<div class="row half">
+																	<div class="6u">
+																		<input type="text" class="text" name="name" id="contact-name" placeholder="Name" />
+																	</div>
+																	<div class="6u">
+																		<input type="text" class="text" name="name" id="contact-email" placeholder="Email" />
+																	</div>
+																</div>
+																<div class="row half">
+																	<div class="12u">
+																		<textarea name="message" id="contact-message" placeholder="Message"></textarea>
+																	</div>
+																</div>
+																<div class="row">
+																<p align="center">
+																	<div class="12u">
+																		<ul class="actions">
+																			<li><input type="submit" class="button button-style1" value="Send" /></li>
+																			<li><input type="reset" class="button button-style2" value="Reset" /></li>
+																		</ul>
+																	</div>
+																</p>
+																</div>
+															</div>
+														</form>
+													</section>
+                        </div>
+                        <hr /> -->
+                    </div>
+                    <!-- /Footer -->
+                    <!-- Copyright -->
+                    <div id="copyright">
+                        <span>Design by <a href="http://html5up.net/"> HTML 5 UP</a>
+						</span>
+                    </div>
+                    <!-- /Copyright -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Footer Wrapper -->
+</body>
+</html>

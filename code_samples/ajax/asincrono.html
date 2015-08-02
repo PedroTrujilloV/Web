@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Página de ejemplo</title>
+<script language="JavaScript" src="ConstructorXMLHttpRequest.js"></script>
+<script language="JavaScript" type="text/javascript">
+var peticion01 = null; //Creamos la variable para el objeto xmlhttprequest
+peticion01 = new ConstructorXMLHttpRequest();
+
+function estadoPeticion() 
+//Función que se llama cada vez que cambia el estado de peticion01.readyState.
+{
+switch(peticion01.readyState) //Según el estado de la petición devolvemos un Texto.
+{
+case 0:
+document.getElementById('estado').innerHTML = "Sin iniciar";
+break;
+case 1:
+document.getElementById('estado').innerHTML = "Cargando";
+break;
+case 2:
+document.getElementById('estado').innerHTML = "Cargado";
+break;
+case 3:
+document.getElementById('estado').innerHTML = "Interactivo";
+break;
+case 4:
+document.getElementById('estado').innerHTML = "Completado";
+//Si ya hemos completado la petición, devolvemos además la información.
+//Escribimos la respuesta en el campo con ID=resultado
+//porque es aqui donde sabemos cuando llegan los datos
+document.getElementById('resultado').innerHTML = peticion01.responseText;
+break;
+}
+}
+
+function Coger(url) //Función coger, en esta caso le entra una dirección relativa al documento actual.
+{
+if(peticion01) //Si tenemos el objeto peticion01
+{
+   
+peticion01.open('GET', url, true); //Abrimos la url, true=forma asíncrona
+
+//Asignamos la función que se va a usar (contiene el manejo de los eventos)
+// cada vez que cambia el estado de peticion01.readyState
+//Y LO HACEMOS ANTES THE HACER EL SEND porque inicia la transmisión.
+//onreadystatechange sabe del estado de la conexion "cuando llegan los datos"
+//es la forma de asignarle "el manejador de los eventos"
+peticion01.onreadystatechange = estadoPeticion;
+//tener cuidado con la forma en que javascript JS maneja los objetos  
+ 
+peticion01.send(null); //No le enviamos datos al servidor
+}
+}
+</script>
+</head>
+<body>
+<!--Cuando ocurra el evento oneclick se llamara la función coger-->
+<button onclick="Coger('esperar.jsp')">Coge un documento</button>
+<table border="4">
+<tr>
+<!--El campo con id=resultado se sustituirá por causa de que ese id está en la función coger-->
+Forma asincrono  trate de digitar despues de hacer click
+<td><span id="resultado">Sin resultado</span></td>
+<!--Campo para indicar el estado de la petición elusuario debe saber que esta pasando-->
+<td><span id="estado">Estado petición</span></td> 
+</tr>
+<tr><td><input type=text></td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,233 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Escape Velocity 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Leslie + Pedro</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900" rel="stylesheet" />
+	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-panels.min.js"></script>
+    <!-- slider -->
+    <noscript>
+        <link rel="stylesheet" href="css/skel-noscript.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-desktop.css" />
+    </noscript>
+    <script>
+
+        /////anclaje suave
+        jQuery(document).ready(function () {
+            //// $('h2').append('<a href="#top" class="gototop">Subir</a>');
+            linkInterno = $('a[href^="#"]');
+            linkInterno.on('click', function (e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+                $('html, body').animate({ scrollTop: $(href).offset().top }, 'slow');
+            });
+        });
+
+        /////desplegar textos largos
+        $(function () {
+            $("#mostrar").click(function (event) {
+                event.preventDefault();
+                $("#caja").slideToggle();
+            });
+            $("#caja a").click(function (event) {
+                event.preventDefault();
+                $("#caja").slideUp();
+            });
+        });
+
+        /////desplegar textos largos tipo2
+        $(document).ready(function () {
+            $("dd").hide();
+            $("dt").click(function (event) {
+                var desplegable = $(this).next();
+                $('dd').not(desplegable).slideUp('fast');
+                desplegable.slideToggle('fast');
+                event.preventDefault();
+            })
+        });
+
+    </script>
+</head>
+<body class="homepage" >
+    <!-- Header Wrapper -->
+    <div id="header-wrapper" class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+                    <!-- Header -->
+                    <div id="header">
+                        <!-- Logo -->
+                        <div id="logo" class="logo-cursiva">
+							<h1>Leslie + Pedro&nbsp</h1>
+                            <span class="byline">17 Enero del 2015</span>
+                            <span class="byline">Cartagena, Colombia</span>
+                        </div>
+                        <!-- /Logo -->
+                        <!-- Nav -->
+                        <nav id="nav">
+											<ul>
+												<li class="current_page_item">
+													<a href="index_es.html"><span>Bienvenidos</span></a>
+													<ul>
+														<li><a href="#wrapper-about">Sobre Nosotros</a></li>
+														<li>
+															<a href="photos_es.html">Fotos</a>
+															<ul>
+																<li><a href="photos_es.html#TheCouple">La Pareja</a></li>
+																<li><a href="photos_es.html#Cartagena">Cartagena</a></li>
+															</ul>
+														</li>
+														<li><a href="">Idioma</a>
+															<ul>
+																<li><a href="about_us.html#wrapper-about">Inglés<img src="images/usa_flag_micro.png" alt="" /></a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="index_es.html#wrapper-wedding-events"><span>Eventos</span></a>
+													<ul>
+														<li><a href="index_es.html#welcome_dinner">Cena de Bienvenida</a></li>
+														<li><a href="index_es.html#wedding">La Boda</a></li>
+														<li><a href="index_es.html#rosario_islands">Islas del Rosario</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="index_es.html#wrapper-travel"><span>Viaje</span></a>
+													<ul>
+														<li><a href="index_es.html#getting_here">Cómo llegar</a></li>
+														<li><a href="index_es.html#hotels">Hoteles</a></li>
+														<li><a href="index_es.html#about_cartagena">Sobre Cartagena</a></li>
+														<li><a href="index_es.html#colombia">Colombia</a></li>
+													</ul>
+												</li>
+												<!-- <li><a href="index_es.html#rsvp">RSVP</a></li> -->
+												<li><a href="https://docs.google.com/forms/d/1Z0FjpeXKfqzSUMwCkqULTiOpXlVtCWTOLUE1EfXKcHY/viewform">RSVP</a></li>
+											</ul>
+										</nav>
+                        <!-- /Nav -->
+                    </div>
+                    <!-- /Header -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Header Wrapper -->
+    
+  
+     <!-- Highlights Wrapper -->
+    <div class="wrapper wrapper-style3" id="wrapper-about">
+        <a href="#wrapper-about" ><div class="title" id="Travel">
+            Sobre Nosotros</div></a>
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+                    <!-- Main -->
+                    <div id="main-travel">
+                       
+                        <!-- Features -->
+                        <section id="features">
+											<header class="style1">
+												<h2>Sobre Nosotros</h2>
+												<p class="byline">Aquí está un poco acerca de los novios :)</p>
+											</header>
+											<div class="feature-list">
+											
+												<div>
+												
+													<div class="row">
+														<div class="6u">
+															<section>
+															
+																<h3 class="fa fa-female" id="leslie">Leslie</h3>
+																
+																<dl>
+																	<dt>
+																		<p align="justify">
+																			<a href="#" class="image image-full"><img src="images/leslie.jpg" alt="" /></a>
+																			<p align="center"><a href="#" class="button button-style1"  id="mostrar" >Acerca de Ella ▼▲</a></p>
+																			<!--<a href="#" ><font size="2">click to show/ hide ▼▲</font></a><br/><br/>-->
+																		</p>
+																	</dt>					
+																	<dd>																		
+																		<p align="justify"><br/><br/>
+																			Leslie nació en la Nochebuena de 1984 en Winter Park, Florida. Ella graduó de la secundaria en Orlando, Florida, y viajó a Cambridge, Massachusetts para estudiar Ingeniería Aeroespacial en <a href="http://web.mit.edu">MIT</a>. También pasó un año increíble en el extranjero en el otro Cambridge (<a href = "http://www.cam.ac.uk/">el de Inglaterra</a>)! De vuelta en Florida, Leslie ha trabajado como ingeniero de sistemas, profesor de matemáticas de la escuela secundaria, y ahora como ingeniero de software. Sus dos mayores placeres de la vida están viajando y leyendo, pero ella también le gusta "correr" (no muy rápido), esquiar en la nieve, y pasear Orlando con amigas y amigos. Ella está emocionada de ir a un montón de nuevas aventuras con Pedro en todo el mundo :).<br/>																			
+																			<!--<a href="#" class="button button-style1"  id="mostrar">About Her</a>-->
+																		</p>
+																	</dd>
+																</dl>
+																
+															</section>
+														</div>
+														<div class="6u">
+															<section>
+																<h3 class="fa fa-male" id="pedro">Pedro</h3>
+																<dl>
+																	<dt>
+																		<p align="justify">
+																	<a href="#" class="image image-full"><img src="images/pedro.jpg" alt="" /></a>
+																	<p align="center"><a href="#" class="button button-style1"  id="mostrar">Acerca de El ▼▲</a></p>
+																	<!--<a href="#" ><font size="2">click to show/ hide ▼▲</font></a><br/><br/>-->
+																</p>
+																		
+																	</dt>					
+																	<dd>
+																		<p align="justify"><br/><br/>
+																			Pedro nació en la antigua ciudad colonial española de Honda, Tolima, en Colombia. Después de terminar la escuela secundaria en Villavicencio, Pedro estudió Ingeniería de Sistemas en <a href = "http://www.unillanos.edu.co/">Unillanos</a>, y ahora trabaja en el desarrollo de software y modelado 3d y diseño. Aunque "el trabajo es un juego" de Pedro, también disfruta del fútbol, viajar, los autos, y aprender acerca de la tecnología.
+																			<br/><br/>														
+																			<!--<a href="#" class="button button-style1"  id="mostrar">About he</a>-->
+																		</p>
+																	</dd>
+																</dl>
+															</section>
+														</div>
+													</div>
+													
+												</div>
+											</div>
+											
+										</section>
+                        <!-- /Features -->
+                    </div>
+                    <!-- /Main -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Highlights Wrapper -->
+	
+    <!-- Footer Wrapper -->
+    <div id="footer-wrapper" class="wrapper foot-copy">
+        
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+                    
+                    <!-- Copyright -->
+                    <div id="copyright">
+                        <span>Design by <a href="http://html5up.net/"> HTML 5 UP</a>
+						</span>
+                    </div>
+                    <!-- /Copyright -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Footer Wrapper -->
+</body>
+</html>
