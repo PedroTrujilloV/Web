@@ -1,6 +1,0 @@
-F:\Mis documentos\Visual Studio 2013\Projects\Demo\HelloBoostrap\bin\HelloBoostrap.dll.config
-F:\Mis documentos\Visual Studio 2013\Projects\Demo\HelloBoostrap\bin\HelloBoostrap.dll
-F:\Mis documentos\Visual Studio 2013\Projects\Demo\HelloBoostrap\bin\HelloBoostrap.pdb
-F:\Mis documentos\Visual Studio 2013\Projects\Demo\HelloBoostrap\obj\Debug\HelloBoostrap.csprojResolveAssemblyReference.cache
-F:\Mis documentos\Visual Studio 2013\Projects\Demo\HelloBoostrap\obj\Debug\HelloBoostrap.dll
-F:\Mis documentos\Visual Studio 2013\Projects\Demo\HelloBoostrap\obj\Debug\HelloBoostrap.pdb
