@@ -1,0 +1,6 @@
+f:\mis documentos\visual studio 2013\Projects\DemoEnhanced DataDisplay\DemoEnhanced DataDisplay\bin\DemoEnhanced DataDisplay.dll.config
+f:\mis documentos\visual studio 2013\Projects\DemoEnhanced DataDisplay\DemoEnhanced DataDisplay\bin\DemoEnhanced DataDisplay.dll
+f:\mis documentos\visual studio 2013\Projects\DemoEnhanced DataDisplay\DemoEnhanced DataDisplay\bin\DemoEnhanced DataDisplay.pdb
+f:\mis documentos\visual studio 2013\Projects\DemoEnhanced DataDisplay\DemoEnhanced DataDisplay\obj\Debug\DemoEnhanced DataDisplay.csprojResolveAssemblyReference.cache
+f:\mis documentos\visual studio 2013\Projects\DemoEnhanced DataDisplay\DemoEnhanced DataDisplay\obj\Debug\DemoEnhanced DataDisplay.dll
+f:\mis documentos\visual studio 2013\Projects\DemoEnhanced DataDisplay\DemoEnhanced DataDisplay\obj\Debug\DemoEnhanced DataDisplay.pdb

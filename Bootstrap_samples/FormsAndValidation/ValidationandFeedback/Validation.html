@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <div class="container">
+        <form class="form form-horizontal">
+            <!-- form content here -->
+            <div class="form-group has-error">
+                <!-- Label and Control -->
+                <label for="address" class="control-label col-md-3">Address:</label>
+                <div class="col-md-6">
+                    <input type="text" name="address" id="address" class="form-control" placeholder="Example: 1234 Nothing Street" />
+                </div>
+            </div>
+
+            <div class="form-group has-error"><!--Example Has Error-->
+                <label for="name" class="control-label col-md-3">Name:</label>
+                <div class="col-md-6">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Example: Paul, Sonia, etc." />
+                </div>
+            </div>
+
+            <div class="form-group has-error"><!--Example Has Error-->
+                <label for="second-name" class="control-label col-md-3">Second name:</label>
+                <div class="col-md-6">
+                    <input type="text" name="second-name" id="second-name" class="form-control" placeholder="Example: Williams, Proctol, etc." />
+                </div>
+            </div>
+
+            <div class="form-group has-error"><!--Example Has Error-->
+                <label for="phone-number" class="control-label col-md-3">Phone number:</label>
+                <div class="col-md-6">
+                    <input type="number" name="phone-number" id="second-name" class="form-control" placeholder="Example: 401 555 5555." />
+                </div>
+            </div>
+
+            <div class="form-group has-error"><!--Example Has Error-->
+                <label for="email" class="control-label col-md-3">Email:</label>
+                <div class="col-md-6">
+                    <!-- Important! : try that everything stay inside of the col so the size of this from group will be same like last others forms-->
+                    <div class="input-group">
+                        <!-- if I need compose a special input so that mean that I need create a input-group-->
+                        <div class="left-inner-addon">
+                            <!-- to add anything left to input-->
+                            <input type="text" name="account-email" id="account-email" class="form-control" placeholder="Example: myemail" />
+                        </div>
+                        <!-- to add anything left to input-->
+                        <div class="input-group-addon">@</div>
+                        <div class="left-inner-addon">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Example: gmail.com" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group has-error"><!--Example Has Error-->
+                <label for="user" class="control-label col-md-3">User:</label>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <input type="text" name="user" id="user" class="form-control" placeholder="Example: MyUser001" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <!-- Group button-->
+            <div class="form-group has-error"><!--Example Has Error-->
+                <label for="sex" class="control-label col-md-3">Sex:</label>
+                <div class="col-md-6 btn-group" data-toggle="buttons">
+                    <!-- Radio Buttons-->
+                    <label class="btn btn-primary">
+                        <input type="radio" id="male" name="sample" />
+                        Male
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" id="female" name="sample" />
+                        Female
+                    </label>
+                </div>
+            </div>
+
+            <!-- Submit Button-->
+            <div class="form-group has-error"><!--Example Has Error-->
+
+                <div class="col-md-offset-3 col-md-4">
+                    <button type="submit" class="btn btn-default">Submit form</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>

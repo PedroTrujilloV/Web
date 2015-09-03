@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <div class="container">
+        <!-- Banner -->
+        <div class="jumbotron">
+            <h1>Submit Album</h1>
+        </div>
+
+        <!--Acordion-->
+        <div class="row">            
+            <div class="panel-group" id="accordion-sample">
+
+                <!-- accordion content -->
+                <div class="panel panel-danger">
+                    <!-- panel content -->
+                    <div class="panel-heading">
+                        <!-- heading content -->
+                        <h3 class="panel-title">
+                            <!-- heading text -->
+                            <a data-toggle="collapse" data-parent="#accordion-sample" href="#accordion-sample-one">
+                                Album Title and Artist
+                            </a>
+                        </h3>
+                    </div>
+                    <!-- content -->
+                    <div id="accordion-sample-one" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <h1>Album Title and Artist</h1>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et enim porttitor, vestibulum nulla id, lacinia neque. 
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion-sample" href="#accordion-sample-two">
+                                Track Information
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="accordion-sample-two" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <h1>Track Information</h1>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et enim porttitor, vestibulum nulla id, lacinia neque.
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion-sample" href="#accordion-sample-three">
+                                Expert Review
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="accordion-sample-three" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <h1>Expert Review</h1>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et enim porttitor, vestibulum nulla id, lacinia neque. 
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+
+    </div>
+</body>
+</html>

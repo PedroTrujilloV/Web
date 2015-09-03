@@ -1,0 +1,6 @@
+f:\mis documentos\visual studio 2013\Projects\ValidationandFeedback\ValidationandFeedback\bin\ValidationandFeedback.dll.config
+f:\mis documentos\visual studio 2013\Projects\ValidationandFeedback\ValidationandFeedback\bin\ValidationandFeedback.dll
+f:\mis documentos\visual studio 2013\Projects\ValidationandFeedback\ValidationandFeedback\bin\ValidationandFeedback.pdb
+f:\mis documentos\visual studio 2013\Projects\ValidationandFeedback\ValidationandFeedback\obj\Debug\ValidationandFeedback.dll
+f:\mis documentos\visual studio 2013\Projects\ValidationandFeedback\ValidationandFeedback\obj\Debug\ValidationandFeedback.pdb
+f:\mis documentos\visual studio 2013\Projects\ValidationandFeedback\ValidationandFeedback\obj\Debug\ValidationandFeedback.csprojResolveAssemblyReference.cache

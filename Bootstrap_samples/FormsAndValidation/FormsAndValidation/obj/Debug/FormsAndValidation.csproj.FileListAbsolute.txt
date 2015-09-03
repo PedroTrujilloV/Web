@@ -1,0 +1,6 @@
+f:\mis documentos\visual studio 2013\Projects\FormsAndValidation\FormsAndValidation\bin\FormsAndValidation.dll.config
+f:\mis documentos\visual studio 2013\Projects\FormsAndValidation\FormsAndValidation\bin\FormsAndValidation.dll
+f:\mis documentos\visual studio 2013\Projects\FormsAndValidation\FormsAndValidation\bin\FormsAndValidation.pdb
+f:\mis documentos\visual studio 2013\Projects\FormsAndValidation\FormsAndValidation\obj\Debug\FormsAndValidation.csprojResolveAssemblyReference.cache
+f:\mis documentos\visual studio 2013\Projects\FormsAndValidation\FormsAndValidation\obj\Debug\FormsAndValidation.dll
+f:\mis documentos\visual studio 2013\Projects\FormsAndValidation\FormsAndValidation\obj\Debug\FormsAndValidation.pdb
